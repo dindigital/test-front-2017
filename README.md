@@ -16,8 +16,8 @@
 
 ### CONHECIMENTOS DESEJÁVEIS:
 
-- Metodologia SMACSS para CSS
-- Wordpresss
+- Metodologia SMACSS e BEM para CSS
+- Wordpress
 - Acessibilidade (WAI-ARIA)
 - AngularJS
 
@@ -62,9 +62,6 @@ OBS: O layout é um free PSD que será usado apenas para o teste.
 - Fazer um fork deste repositório
 - Fazer a montagem das páginas
 - Fazer um pull request quando finalizar
-
-### Sugestões:
-- Atenço ao
 
 # Boa sorte
 ## Muito obrigado pelo interesse em participar
