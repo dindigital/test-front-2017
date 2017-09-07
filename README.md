@@ -65,3 +65,5 @@ OBS: O layout é um free PSD que será usado apenas para o teste.
 
 # Boa sorte
 ## Muito obrigado pelo interesse em participar
+
+![Home](https://github.com/dindigital/test-front-2017/blob/master/layout/freshness.png)
