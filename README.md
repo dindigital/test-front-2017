@@ -63,7 +63,6 @@ OBS: O layout é um free PSD que será usado apenas para o teste.
 - Fazer a montagem das páginas
 - Fazer um pull request quando finalizar
 
-# Boa sorte
-## Muito obrigado pelo interesse em participar
+# Boa sorte :)
 
 ![Home](https://github.com/dindigital/test-front-2017/blob/master/layout/freshness.png)
