@@ -31,8 +31,8 @@
 
 - Vale transporte
 - Vale refeição
-- Convênio médico amil (50%)
-- Convênio odontológico amil (50%)
+- Convênio médico AMIL (50%)
+- Convênio odontológico AMIL (50%)
 
 ### OBSERVAÇÕES GERAIS:
 
@@ -54,8 +54,8 @@ https://goo.gl/maps/deVy5xCMtZG2
 
 # O TESTE
 ### O que deve ser feito ?
-1. Montagem da pgina home fornecido neste reposótio.
-2. Montagem responsiva
+1. Montagem da página home fornecido neste repositório.
+2. Montagem responsiva.
 OBS: O layout é um free PSD que será usado apenas para o teste. 
 
 ### Como participar ?
