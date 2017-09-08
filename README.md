@@ -56,6 +56,7 @@ https://goo.gl/maps/deVy5xCMtZG2
 ### O que deve ser feito ?
 1. Montagem da página home fornecido neste repositório.
 2. Montagem responsiva.
+
 OBS: O layout é um free PSD que será usado apenas para o teste. 
 
 ### Como participar ?
