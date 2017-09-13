@@ -1,0 +1,27 @@
+/*****************************************************************************************************/
+/* LESS VARIABLES */
+/*****************************************************************************************************/
+@regular-text: #3bafbe;
+@primary: #3bafbe;
+@light-text: #999999;
+@dark-text: #4a4a4a;
+@dark-bg: #353535;
+
+/*****************************************************************************************************/
+/* LESS MIXINS */
+/*****************************************************************************************************/
+.round(@radius: 10px){
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding;
+}
+.transition(@property: color, @duration: .2s){
+    -webkit-transition: @property @duration ease-out;
+    -moz-transition: @property @duration ease-out;
+    -o-transition: @property @duration ease-out;
+    transition: @property @duration ease-out;
+}

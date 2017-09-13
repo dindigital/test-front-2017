@@ -1,0 +1,33 @@
+/*****************************************************************************************************/
+/* LESS UTILITY */
+/*****************************************************************************************************/
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+input,
+textarea,
+select {
+  outline: none;
+}
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.inline li {
+  display: inline-block;
+  margin-right: 24px;
+}
+.inline li:last-child {
+  margin-right: 0;
+}
+.narrow {
+  width: 80%;
+  margin: 0 auto 1.2em;
+}
