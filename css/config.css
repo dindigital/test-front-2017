@@ -1,0 +1,25 @@
+::-webkit-input-placeholder {
+  color: #ffffff; }
+
+::-moz-placeholder {
+  color: #ffffff; }
+
+:-ms-input-placeholder {
+  color: #ffffff; }
+
+:-moz-placeholder {
+  color: #ffffff; }
+
+.scrollHeader {
+  height: 40px; }
+  .scrollHeader form, .scrollHeader .social {
+    display: none !important; }
+  .scrollHeader nav {
+    margin-bottom: 15px !important; }
+
+.showMenu {
+  height: auto !important;
+  min-height: 300px !important;
+  opacity: 1 !important; }
+
+/*# sourceMappingURL=config.css.map */
