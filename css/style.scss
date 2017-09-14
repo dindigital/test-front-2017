@@ -1,0 +1,495 @@
+@import 'config.scss';
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+a{
+	transition-duration: 0.5s;
+}
+a:hover{
+	color: $orange !important;
+}
+input[type="submit"]{
+	-webkit-appearance: none;
+	appearance: none;
+}
+input[type="submit"]:hover{
+	background-color: $orange !important;
+}
+
+header{
+	width: 95%;
+	height: 95px;
+	padding: 25px 2.5% 20px;
+	border-top: 5px solid $lightBlue;
+	border-bottom: 1px solid $grey;
+	position: fixed;
+	top: 0;
+	background: white;
+	z-index: 50;
+	transition-duration: 0.5s;
+
+	.container{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		@include row-reverse-space-end;
+
+		form{
+			width: 290px;
+			@include row-space-center;
+
+			input[type="search"]{
+				width: 215px;
+				height: 32px;
+				padding: 0 4%;
+				font: 200 12px $font;
+				color: white;
+				border-radius: 10px;
+				border: 0;
+				background: $black;
+				outline: none;
+			}
+			input[type="submit"]{
+				width: 70px;
+				height: 32px;
+				padding: 0 2%;
+				font: 200 12px $font;
+				color: white;
+				text-transform: uppercase;
+				border-radius: 10px;
+				border: 0;
+				background: $lightBlue;
+				outline: none;
+				transition-duration: 0.5s;
+			}
+		}
+		.social{
+			width: 15%;
+			height: 32px;
+			margin-right: 20vw;
+			@include row-space-center;
+
+			a{
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				background: $black;
+				position: relative;
+				transition-duration: 0.5s;
+
+				img{
+					width: 55%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			a:last-child{
+				img{
+					width: 45%;
+				}
+			}
+		}
+		nav{
+			width: 530px;
+			height: 15px;
+			padding-left: 20%;
+			align-self: flex-end;
+
+			ul{
+				list-style: none;
+				width: 100%;
+				@include row-space-center;
+
+				li{
+					cursor: pointer;
+
+					a{
+						font: 200 12px $font;
+						cursor: pointer;
+						color: $darkGrey;
+						text-transform: uppercase;
+						transition-duration: 0.5s;
+					}
+					a.active{
+						color: $lightBlue;
+					}
+					a.active:hover{
+						color: $lightBlue;
+					}
+				}
+			}
+		}
+	}
+	.logo{
+		width: 160px;
+		height: 40px;
+		position: absolute;
+		bottom: 20px;
+		left: 2.5%;
+		align-self: flex-end;
+
+		img{
+			width: 100%;
+		}
+	}
+	.linkMenu{
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		right: 2.5%;
+		top: 25px;
+		background: url('../images/menu.svg') center no-repeat;
+		background-size: 100%;
+		transition-duration: 0.5s;
+		display: none;
+	}
+	.fechar{
+		background: url('../images/fechar-menu.svg') center no-repeat;
+	}
+}
+
+.banner{
+	width: 95%;
+	height: 415px;
+	margin: 145px 2.5% 0;
+	background: white;
+	cursor: move;
+	position: relative;
+	border-bottom: 1px solid $grey;
+
+	.slide{
+		width: 100%;
+		height: 415px;
+		float: left;
+		outline: none;
+		@include row-space-around;
+
+		img{
+			width: 25%;
+		}
+		.content{
+			width: 40%;
+
+			.titulo{
+				font: 200 42px $font;
+				color: $darkGrey;
+				width: 100%;
+			}
+			.text{
+				font: 200 16px $font;
+				color: $darkGrey;
+				width: 100%;
+				margin-top: 20px;
+			}
+			a{
+				width: 120px;
+				height: 32px;
+				padding: 0 2%;
+				font: 200 16px/32px $font;
+				color: white;
+				text-align: center;
+				text-transform: uppercase;
+				border-radius: 10px;
+				border: 0;
+				background: $lightBlue;
+				outline: none;
+				float: left;
+				margin-top: 20px;
+				transition-duration: 0.5s;
+			}
+		}
+	}
+	.slick-dots{
+		width: 95px;
+		position: absolute;
+		right: 2%;
+		bottom: 5%;
+		@include row-center-start;
+
+		li{
+			width: 20px;
+			display: flex;
+
+			button{
+				width: 10px;
+				height: 10px;
+				border: 2px solid $lightBlue;
+				border-radius: 50%;
+				color: transparent;
+				background: $lightBlue;
+			}
+		}
+		li.slick-active{
+			button{
+				background: transparent;
+			}
+		}
+	}
+}
+
+.posts{
+	width: 95%;
+	height: auto;
+	margin: 0 2.5% 0;
+	padding: 50px 0;
+	background: white;
+	cursor: move;
+	position: relative;
+	border-bottom: 1px solid $grey;
+	float: left;
+	@include row-space-center;
+	flex-wrap: wrap;
+
+	div{
+		width: 29%;
+		float: left;
+
+		.photoPost{
+			width: 300px;
+			height: 160px;
+			float: left;
+			background: $black;
+			position: relative;
+			overflow: hidden;
+
+			img{
+				min-height: 100%;
+				min-width: 100%;
+				max-width: 150%;
+				max-height: 150%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+		.titulo{
+			font: 200 16px $font;
+			color: $darkGrey;
+			width: 100%;
+			float: left;
+			clear: left;
+			margin-top: 25px;
+		}
+		.text{
+			font: 200 13px $font;
+			color: $darkGrey;
+			width: 100%;
+			margin-top: 15px;
+			float: left;
+			clear: left;
+		}
+		.readMore{
+			width: 105px;
+			height: 32px;
+			padding: 0 2%;
+			font: 200 13px/32px $font;
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			border-radius: 10px;
+			border: 0;
+			background: $lightBlue;
+			outline: none;
+			float: left;
+			margin-top: 15px;
+			transition-duration: 0.5s;
+			float: left;
+			clear: left;
+		}
+	}
+}
+
+.depositions{
+	width: 100%;
+	float: left;
+	background: white;
+
+	.testimony{
+		width: 65%;
+		padding: 50px 17.5%;
+
+		blockquote p{
+			font: 200 22px $font;
+			font-style: italic;
+			color: $darkGrey;
+			text-align: center;
+		}
+	}
+	.usersTestimony{
+		width: 95%;
+		height: auto;
+		float: left;
+		margin: 0 2.5% 0;
+		padding: 50px 0;
+
+		.user{
+			width: 33%;
+			float: left;
+			margin: 0 0 40px;
+
+			figure{
+				width: 80px;
+				height: 80px;
+				border: 1px solid $grey;
+				padding: 5px;
+				background: white;
+				position: relative;
+				float: left;
+
+				div{
+					width: 80px;
+					height: 80px;
+					position: relative;
+					overflow: hidden;
+					background: $black;
+
+					img{
+						min-height: 100%;
+						min-width: 100%;
+						max-width: 150%;
+						max-height: 150%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
+				}
+			}
+			.titulo{
+				font: 200 13px $font;
+				color: $lightBlue;
+				width: 60%;
+				float: left;
+				margin: 5px 0 0 5%;
+			}
+			.text{
+				font: 200 12px/18px $font;
+				color: $darkGrey;
+				width: 60%;
+				float: left;
+				margin: 10px 0 0 5%;
+			}
+		}
+	}
+}
+
+footer{
+	width: 100%;
+	min-height: 280px;
+	float: left;
+	background: $darkBlack;
+
+	.container{
+		width: 95%;
+		padding: 20px 2.5%;
+		@include row-space-start;
+		flex-wrap: wrap;
+
+		.column{
+			width: 20%;
+			min-height: 180px;
+			margin-top: 40px;
+
+			.title{
+				width: 100%;
+				font: 200 20px $font;
+				color: white;
+				margin-bottom: 20px;
+			}
+			p{
+				width: 100%;
+				font: 200 12px $font;
+				color: $darkGrey;
+
+				a{
+					font: 200 12px $font;
+					color: $lightBlue;
+					text-decoration: none;
+				}
+			}
+			ul{
+				width: 80%;
+				list-style: none;
+
+				li{
+					width: 100%;
+					height: 20px;
+					margin-top: 10px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid $black;
+
+					a{
+						font: 200 12px $font;
+						color: $lightBlue;
+						text-decoration: none;
+					}
+				}
+			}
+			.readMore{
+				float: right;
+				display: block;
+				font: 200 12px $font;
+				color: $lightBlue;
+				text-decoration: none;
+				margin-top: 10px;
+			}
+			form{
+				width: 80%;
+
+				input[type="text"], input[type="email"]{
+					width: 100%;
+					height: 32px;
+					padding: 0 4%;
+					font: 200 12px $font;
+					color: white;
+					border-radius: 10px;
+					border: 0;
+					background: $black;
+					outline: none;
+					margin-top: 10px;
+				}
+				input[type="submit"]{
+					width: 80px;
+					height: 32px;
+					padding: 0 2%;
+					font: 200 12px $font;
+					color: white;
+					text-transform: uppercase;
+					border-radius: 10px;
+					border: 0;
+					background: $lightBlue;
+					outline: none;
+					margin-top: 10px;
+					transition-duration: 0.5s;
+				}
+			}
+		}
+	}
+	.copyright{
+		width: 95%;
+		min-height: 20px;
+		padding: 20px 2.5%;
+		background: $deepBlack;
+
+		p{
+			font: 200 12px $font;
+			color: $darkGrey;	
+		}
+		p:first-child{
+			float: left;
+		}
+		p:last-child{
+			float: right;
+		}
+	}
+}
+
+
+

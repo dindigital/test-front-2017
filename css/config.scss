@@ -1,0 +1,161 @@
+// Colors
+$lightBlue: #3bafbe;
+$grey: #e2e2e2;
+$darkGrey: #999999;
+$orange: #ee802f;
+$black: #333333;
+$darkBlack: #252525;
+$deepBlack: #1a1a1a;
+
+// Font
+$font: georgia, sans-serif;
+
+// Placeholder Color
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+::-moz-placeholder {
+  color: #ffffff;
+}
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+:-moz-placeholder {
+  color: #ffffff;
+}
+
+// Flexbox Mixins
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+@mixin column-start-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+@mixin column-end-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+}
+
+@mixin column-end-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin row-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin row-space-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin row-space-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin row-reverse-space-end {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin row-center-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+@mixin row-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+@mixin row-end-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+
+// Animations & Interactions
+
+.scrollHeader{
+    height: 40px;
+
+    form, .social{
+        display: none !important;
+    }
+    nav{
+        margin-bottom: 15px !important;
+    }
+}
+
+.showMenu{
+    height: auto !important;
+    min-height: 300px !important;
+    opacity: 1 !important;
+}
+

@@ -1,0 +1,359 @@
+::-webkit-input-placeholder {
+  color: #ffffff; }
+
+::-moz-placeholder {
+  color: #ffffff; }
+
+:-ms-input-placeholder {
+  color: #ffffff; }
+
+:-moz-placeholder {
+  color: #ffffff; }
+
+.scrollHeader {
+  height: 40px; }
+  .scrollHeader form, .scrollHeader .social {
+    display: none !important; }
+  .scrollHeader nav {
+    margin-bottom: 15px !important; }
+
+.showMenu {
+  height: auto !important;
+  min-height: 300px !important;
+  opacity: 1 !important; }
+
+@media screen and (max-width: 1025px) {
+  header div .social {
+    width: 20%; } }
+@media screen and (max-width: 769px) {
+  header div .social {
+    width: 25%;
+    margin-right: 10vw; }
+
+  .posts {
+    width: 95%;
+    display: block; }
+    .posts div {
+      width: 300px;
+      display: block;
+      clear: both;
+      float: none;
+      margin: 0 auto;
+      padding: 20px 0; }
+      .posts div .photoPost {
+        width: 300px;
+        height: 160px;
+        float: left;
+        background: #333333;
+        position: relative;
+        overflow: hidden; }
+        .posts div .photoPost img {
+          min-height: 100%;
+          min-width: 100%;
+          max-width: 150%;
+          max-height: 150%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+      .posts div .titulo {
+        font: 200 16px georgia, sans-serif;
+        color: #999999;
+        width: 100%;
+        float: left;
+        clear: left;
+        margin-top: 25px; }
+      .posts div .text {
+        font: 200 13px georgia, sans-serif;
+        color: #999999;
+        width: 100%;
+        margin-top: 15px;
+        float: left;
+        clear: left; }
+      .posts div .readMore {
+        width: 105px;
+        height: 32px;
+        padding: 0 2%;
+        font: 200 13px/32px georgia, sans-serif;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 10px;
+        border: 0;
+        background: #3bafbe;
+        outline: none;
+        float: left;
+        margin-top: 15px;
+        transition-duration: 0.5s;
+        float: left;
+        clear: left; }
+      .posts div .readMore:hover {
+        background: #ee802f; }
+
+  .depositions .usersTestimony .user .text {
+    width: 90%;
+    margin: 10px 0 0 0; }
+
+  .depositions .usersTestimony .user .titulo {
+    width: 90%;
+    margin: 10px 0 0 0; }
+
+  footer .container {
+    width: 95%;
+    padding: 20px 2.5%;
+    display: block;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: inherit; }
+
+  footer .container .column {
+    width: 50%;
+    display: block;
+    margin: 20px auto; } }
+@media screen and (max-width: 415px) {
+  header {
+    width: 95%;
+    height: 45px;
+    padding: 25px 2.5% 20px;
+    border-top: 5px solid #3bafbe;
+    border-bottom: 1px solid #e2e2e2;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 50;
+    transition-duration: 0.5s; }
+
+  header .container {
+    width: 88%;
+    height: 0;
+    position: relative;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 85%;
+    right: 3%;
+    flex-direction: inherit;
+    flex-wrap: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e2e2e2;
+    z-index: 60;
+    overflow: hidden;
+    transition-duration: 0.5s; }
+
+  header .container form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+  header .container .social {
+    width: 80%;
+    height: 32px;
+    padding: 30px 10%;
+    margin-right: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+  header .container .social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333333;
+    position: relative;
+    transition-duration: 0.5s; }
+
+  header .container form input[type="search"] {
+    width: 75%; }
+
+  header .container form input[type="submit"] {
+    width: 22%; }
+
+  header .container nav {
+    width: 100%;
+    height: 15px;
+    padding-left: 0;
+    align-self: flex-end; }
+
+  header .container nav ul {
+    list-style: none;
+    width: 90%;
+    padding: 0 5%;
+    display: block;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit; }
+
+  header .container nav ul li {
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin: 5px 0; }
+
+  header .container nav ul li a {
+    font: 200 20px georgia, sans-serif;
+    cursor: pointer;
+    color: #999999;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    width: 100%;
+    text-align: center;
+    float: left; }
+
+  header .logo {
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    bottom: auto;
+    top: 25px;
+    left: 2.5%;
+    align-self: flex-end; }
+
+  header .linkMenu {
+    display: block; }
+
+  .banner .slide {
+    width: 100%;
+    height: auto;
+    float: left;
+    outline: none;
+    display: block;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    align-content: inherit; }
+
+  .banner {
+    width: 95%;
+    height: auto;
+    margin: 145px 2.5% 0;
+    background: white;
+    cursor: move;
+    position: relative;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #e2e2e2; }
+
+  .banner .slide img {
+    width: 65%;
+    margin: 0 auto 30px; }
+
+  .banner .slide .content {
+    width: 80%;
+    margin: 0 auto; }
+
+  .banner .slide .content .titulo {
+    font: 200 32px georgia, sans-serif;
+    color: #999999;
+    width: 100%; }
+
+  .depositions .usersTestimony .user {
+    width: 100%;
+    float: left;
+    margin: 0 0 40px; }
+
+  .depositions .usersTestimony .user figure, .depositions .usersTestimony .user figure div {
+    width: 120px;
+    height: 120px; }
+
+  .depositions .usersTestimony .user figure {
+    float: none;
+    margin: 0 auto 20px; }
+
+  .depositions .usersTestimony .user .titulo, .depositions .usersTestimony .user .text {
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-align: center; }
+
+  footer .container .column {
+    width: 80%;
+    display: block;
+    margin: 40px auto !important; }
+
+  footer .container .column .title {
+    font: 200 25px georgia, sans-serif;
+    text-align: center; }
+
+  footer .container .column p {
+    font: 200 15px georgia, sans-serif;
+    text-align: center; }
+
+  footer .container .column ul {
+    width: 100%; }
+
+  footer .container .column ul li {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333333; }
+
+  footer .container .column ul li a {
+    font: 200 18px/40px georgia, sans-serif;
+    color: #3bafbe;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    height: 40px; }
+
+  footer .container .column .readMore {
+    float: right;
+    width: 100%;
+    display: block;
+    font: 200 18px georgia, sans-serif;
+    color: #3bafbe;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center; }
+
+  footer .container .column form {
+    width: 100%; }
+
+  footer .container .column form input[type="text"], footer .container .column form input[type="email"] {
+    width: 93%;
+    height: 45px !important;
+    padding: 0 4%;
+    font: 200 12px georgia, sans-serif;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    background: #333333;
+    outline: none;
+    margin-top: 10px; }
+
+  footer .container .column form input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    padding: 0 2%;
+    font: 200 15px georgia, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0;
+    background: #3bafbe;
+    outline: none;
+    margin-top: 10px;
+    transition-duration: 0.5s; }
+
+  footer .copyright {
+    width: 95%;
+    min-height: 40px;
+    padding: 20px 2.5%;
+    background: #1a1a1a; }
+
+  footer .copyright p {
+    font: 200 12px georgia, sans-serif;
+    color: #999999;
+    width: 100%;
+    margin: 5px 0 0; } }
+
+/*# sourceMappingURL=responsive.css.map */
