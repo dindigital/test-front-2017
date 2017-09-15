@@ -1,0 +1,108 @@
+/* footer.scss */
+#rodape {
+	.custom-display {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#cols-rodape {
+		background: $bg-escuro;
+		padding: 10px 0 60px 0;
+		.titulo-col {
+			color: $branco;
+			min-height: 50px;
+		}
+		#contato-col {
+			.list {
+				li {
+					color: $cinza;
+					a {
+						color: $azul !important;
+						cursor: pointer;
+						background: transparent !important;
+						text-decoration: none !important;
+						transition: 0.3s;
+						&:hover { color: $branco !important; }
+					}
+				}
+			}
+		}
+		#links-col {
+			.list {
+				li { margin: 8px 0; }
+				a {
+					color: $azul !important;
+					cursor: pointer;
+					background: transparent !important;
+					text-decoration: none !important;
+					transition: 0.3s;
+					&:hover {
+						color: $branco !important;
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+		#blog-col {
+			.titulo {
+				margin: 0 0 10px 0;
+			}
+			.conteudo * {
+				color: $cinza;
+				&.descricao { float: left; margin-top: 5px; }
+				&.btn-ler-mais {
+					cursor: pointer;
+					background: transparent !important;
+					color: $azul !important;
+					text-decoration: none !important;
+					float: right;
+					transition: 0.3s;
+					&:hover { color: $branco !important; margin-right: -5px;}
+				}
+			}
+		}
+		#newsletter-col {
+			.newsletter-campo {
+				background: rgba($branco, 0.1);
+				border-radius: 8px;
+				margin-bottom: 12px;
+				padding: 5px 10px;
+				color: $branco;
+				border: none;
+				box-shadow: none;
+				width: 100%;
+				&::-webkit-input-placeholder { opacity: 1; color: $cinza; }
+				&::-moz-placeholder { opacity: 1; color: $cinza; }
+				&:-ms-input-placeholder { opacity: 1; color: $cinza; }
+				&:-moz-placeholder { opacity: 1; color: $cinza; }
+			}
+			.btn-submit {
+				background: $azul !important;
+				color: $branco !important;
+				text-align: center;
+				font-weight: bold;
+				padding: 5px 15px;
+				box-shadow: none;
+				border-radius: 5px;
+				transition: 0.3s;
+				border: 1px solid transparent;
+				cursor: pointer;
+				&:hover {
+					background: $branco !important;
+					color: $azul !important;
+					border: 1px solid $azul;
+				}
+			}
+		}
+	}
+	#copyright-bar {
+		background: #1a1a1a;
+		padding: 15px;
+		p {
+			display: inline-block;
+			margin: 0;
+			color: $cinza;
+			&.copyright { float: left; }
+			&.template-owner { float: right; }
+		}
+	}
+}

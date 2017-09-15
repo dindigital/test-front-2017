@@ -1,0 +1,103 @@
+/* Colors */
+$azul: #3bafbe;
+$branco: #FFFFFF;
+$preto: #000000;
+$bg-escuro: #252525;
+$bg-inputs: #333333;
+$cinza: #999999;
+$cinza-claro: #848c92;
+$cinza-escuro: #4a4a4a;
+$cinza-borda-clara: #e2e2e2;
+
+/* Fonts - Desktop */
+$d-font-semi-pequena: 12pt;
+$d-font-pequena: 13pt;
+$d-font-media: 16pt;
+$d-font-semi-grande: 20pt;
+$d-font-grande: 22pt;
+
+.texto-semi-pequeno { font-size: $d-font-semi-pequena; }
+.texto-pequeno { font-size: $d-font-pequena; }
+.texto-medio { font-size: $d-font-media; }
+.texto-semi-grande { font-size: $d-font-semi-grande; }
+.texto-grande { font-size: $d-font-grande; }
+.custom-font, .custom-font * { font-family: 'Roboto Condensed', sans-serif !important; }
+
+html {
+	position: relative;
+	float: left;
+	width: 100%;
+	background: $branco !important;
+}
+#conteudo {
+	border-top: 1px solid $cinza-borda-clara;
+    margin-top: 10px;
+}
+.container { max-width: 1000px; }
+body {
+	font-size: 16px;
+	color: $preto;
+	margin: 0 !important;
+	padding: 0 !important;
+	/* max-width: 1000px; */
+    overflow-x: hidden;
+    text-align: center;
+    margin: auto !important;
+    float: none !important;
+    position: initial !important;
+    * { font-family: Georgia, serif; }
+}
+.limit-conteudo {
+	width: 100%;
+	max-width: 1000px;
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+}
+.fulldiv {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.list {
+	list-style: none;
+	padding-left: 5px;
+}
+img { max-width: 100%; }
+.no-padding { padding: 0 !important; }
+.no-padding-left { padding-left: 0 !important; }
+.no-padding-right { padding-right: 0 !important; }
+
+#banners {
+	.nivo-controlNav {
+		text-align: right;
+		padding: 5px 15px;
+    	height: 25px;
+    	position: absolute;
+	    bottom: 40px;
+	    left: 0;
+	    width: 100%;
+	    z-index: 9;
+		.nivo-control {
+			color: transparent;
+			width: 15px;
+			height: 15px;
+		    border-radius: 50px;
+		    display: block;
+		    float: right;
+		    background: $azul;
+		    border: 2px solid $azul;
+		    margin-left: 5px;
+		    transition: 0.4s;
+		    &:hover, &.active { background: $branco; } 
+		}
+	}
+}
+
+@import  'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
+@import  '_partials/bootstrap.scss';
+@import  '_partials/custom/header.scss';
+@import  '_partials/custom/destaques.scss';
+@import  '_partials/custom/todos-itens.scss';
+@import  '_partials/custom/footer.scss';
+@import  '_partials/custom/responsive.scss';
