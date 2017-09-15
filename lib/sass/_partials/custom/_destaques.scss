@@ -1,0 +1,29 @@
+/* destaques.scss */
+#destaques {
+	padding: 40px 0;
+	border-top: 1px solid $cinza-borda-clara;
+	border-bottom: 1px solid $cinza-borda-clara;
+	text-align: left;
+	.titulo { color: $cinza-escuro; }
+	.descricao, .descricao * { color: $cinza; }
+	.btn-ler-mais {
+		margin-top: 20px;
+		float: left;
+		background: $azul !important;
+		color: $branco !important;
+		text-align: center;
+		border-radius: 8px;
+		padding: 5px 10px;
+		min-width: 105px;
+		text-decoration: none !important;
+		border: 1px solid transparent;
+		transition: 0.3s;
+		cursor: pointer;
+		&:hover {
+			background: $branco !important;
+			color: $azul !important;
+			border: 1px solid $azul;
+			padding-left: 15px;
+		}
+	}
+}

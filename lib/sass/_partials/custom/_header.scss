@@ -1,0 +1,93 @@
+/* header.scss */
+#topo {
+	border-top: 5px solid $azul;
+	padding-top: 20px;
+	#sociais {
+		float: left;
+		display: inline-block;
+		.icone-sociais {
+			display: inline-block;
+			width: 31px;
+			height: 31px;
+			cursor: pointer;
+			transition: 0.3s;
+			&:hover { transform: scale(1.3); }
+			&.linkedin { background: url('../../imagens/sociais.png') -5px -4px/180px no-repeat !important; }
+			&.twitter { background: url('../../imagens/sociais.png') -39px -4px/180px no-repeat !important; }
+			&.pinterest { background: url('../../imagens/sociais.png') -74px -4px/180px no-repeat !important; }
+			&.googleplus { background: url('../../imagens/sociais.png') -108px -4px/180px no-repeat !important; }
+			&.rss { background: url('../../imagens/sociais.png') -143px -4px/180px no-repeat !important; }
+		}
+	}
+	#pesquisar {
+		float: right;
+		display: inline-block;
+		.campo-pesquisa {
+			background: $bg-inputs;
+			border-radius: 8px;
+			margin-bottom: 12px;
+			padding: 5px 10px;
+			color: $branco;
+			border: none;
+			box-shadow: none;
+			width: 250px;
+			&::-webkit-input-placeholder { opacity: 1; color: $branco; }
+			&::-moz-placeholder { opacity: 1; color: $branco; }
+			&:-ms-input-placeholder { opacity: 1; color: $branco; }
+			&:-moz-placeholder { opacity: 1; color: $branco; }
+		}
+		#btn-pesquisar {
+			background: $azul !important;
+			color: $branco !important;
+			text-align: center;
+			padding: 5px 15px;
+			box-shadow: none;
+			border-radius: 8px;
+			transition: 0.3s;
+			border: 1px solid transparent;
+			cursor: pointer;
+			&:hover {
+				background: $branco !important;
+				color: $azul !important;
+				border: 1px solid $azul;
+			}
+		}
+	}
+	#logo {
+		float: left;
+		display: inline-block;
+		img {
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover { transform: scale(1.1); }
+		}
+	}
+	#menu {
+		float: right;
+		display: inline-block;
+		margin-top: 20px;
+		.navbar-toggle {
+			border: 1px solid $azul;
+			.icon-bar { background: $azul; }
+		}
+		#lista-menu {
+			padding: 0;
+			.nav {
+				li {
+					&:last-child {
+						a { padding-right: 0; }
+					}
+					a {
+						&:hover, &.active { color: $azul !important; }
+						font-size: 12pt;
+						transition: 0.3s;
+						color: $cinza !important;
+						background: transparent !important;
+						padding: 10px;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
