@@ -1,0 +1,32 @@
+{
+  "steps": [
+    {
+      "id": "01",
+      "title": "Liniquer Fractucello",
+      "img": "img/monitor.png",
+      "text": "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante."
+    },
+    
+    {
+      "id": "02",
+      "title": "Web Developer",
+      "img": "img/monitor2.png",
+      "text": "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante."
+    },
+    
+    {
+      "id": "03",
+      "title": "Interface Designer",
+      "img": "img/monitor.png",
+      "text": "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante."
+    },
+    
+    {
+      "id": "04",
+      "title": "Lorem title 4s",
+      "img": "img/monitor2.png",
+      "text": "Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante."
+    }
+    
+  ]
+}
