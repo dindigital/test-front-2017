@@ -1,0 +1,61 @@
+// OFF CANVAS MENU (MOBILE)
+.offcanvas-transform { .transition(0.600s,ease-in-out); background-color: #fff; float: left;position: relative; width: 100%; 
+	&.access-left{-moz-transform: translateX(-320px);-webkit-transform: translateX(-320px);-o-transform: translateX(-320px);transform: translateX(-320px);-ms-transform: translateX(-320px);}
+}
+
+.offcanvas-menu { position: absolute; overflow-y: scroll;width: 320px;  height: 100%; right: -320px;  background-color: #fff; z-index: 8888; padding-bottom: 50px;
+    .center { position: relative; margin: 0 auto; width:75%; height: 100%;}
+	.offcanvas-top-menu { float: left;position: relative; width: 100%; margin-bottom: 5px;
+		li { float: left;position: relative; width: 100%; list-style-type: none; border-bottom: 1px #f2f2f2 solid;
+			a {  padding:10px 0px 10px 0px; .transition(0.200s,linear); text-transform: uppercase; float: left;position: relative; width: 100%; text-decoration: none; font-family: 'Georgia', sans-serif; font-weight: 400; color: #999999; font-size: 12px; letter-spacing: 0.8px;}
+        }
+    }
+
+    .search-form { width: 100%; float: right; position: relative; margin-top: 10px;
+        input[type="text"] { float: left; position: relative; width: 100%; font-family: 'Georgia'; font-size: 12px; letter-spacing: 0.5px; outline: 0; border:0; color: #fff; padding: 6px 10px; .rounded(9px); background-color: #333333; }
+        input[type="submit"] { width: 23.5%; display: none; text-transform: uppercase; float: right; position: relative; text-align: center;border: 0px; color: #fff; background-color: #3bafbe; font-family: 'Georgia'; font-size: 12px;.rounded(9px);  letter-spacing: 0.5px; padding: 6px 0;
+            &:hover { .opacity(0.8) }
+        }
+    }
+    
+    .social { float: left; position: relative; text-align: center; width: 100%; padding: 0 20px; margin-top: 20px;
+        a { width: 32px; height: 32px; background-color: #1f1f1f; text-align: center; margin-bottom: 10px; .transition(0.200s,linear); .rounded(30px); display: inline-block;  overflow: hidden; text-indent: -9999px; text-align: center; position: relative; float: none; margin-right: 10px;background-image: url('../images/social_sprite.png');  
+            &.feed { background-position:  -0 -0;
+                &:hover { background-color: #ee802f; }
+            }
+
+            &.in {background-position: -32px -0;
+                &:hover { background-color: #0e76a8; }
+            }
+
+            &.pin {background-position: -64px -0;
+                &:hover { background-color: #c8232c; }
+            }
+
+            &.plus {background-position: -96px -0;
+                &:hover { background-color: #db4a39; }
+            }
+
+            &.tw {background-position: -128px -0;
+                &:hover { background-color: #00acee; }
+            }
+        }
+    }
+
+
+}
+
+
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 550px) {
+body when (@responsive-website = 'true' ) {
+
+    .offcanvas-transform { 
+        &.access-left{ -moz-transform: translateX(-80%);-webkit-transform: translateX(-80%);-o-transform: translateX(-80%);transform: translateX(-80%);-ms-transform: translateX(-80%);}
+    }
+
+    .offcanvas-menu { width: 80%; right: -80%; }
+    
+}
+}
