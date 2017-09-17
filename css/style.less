@@ -1,0 +1,35 @@
+/* 
+* Copyright (c) 2017 KELVIN CRISOS
+* Author: KELVIN CRISOS / kelvin.crisos@gmail.com
+* Licensed under the MIT License:
+* http://www.opensource.org/licenses/mit-license.php
+
+1. Layout config
+-----------------------------------------------------------------------*/
+@body-bg : #ffffff;
+@col-center: 960px;
+@responsive-website: 'true';
+
+@no-responsive-min-width: 1000px; //if @responsive-website = "false"
+
+
+/* 2. import modules
+-----------------------------------------------------------------------*/
+// base
+@import "base/normalize"; 	// reset
+@import "base/fonts"; 
+@import "base/elements";  	// css3 less functions
+@import "base/components";	// geral classes
+
+// structure
+@import "base/grid";		// responsive grid stylesheet
+
+//assets
+@import "assets/animate";
+ @import "assets/owl.carousel.less";
+
+//modules
+@import "modules/offcanvas-menu";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/content";
