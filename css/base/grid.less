@@ -1,0 +1,114 @@
+/* GRID -----------------------------------------------------------------------*/
+
+*,
+*:after,
+*:before { margin: 0; padding: 0;
+  -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+ 
+[class*='col-'] { position: relative;}
+ 
+/* Clearfix */
+.frame:after {content: "";display: table;clear: both;}
+
+
+
+
+.col-1  { float: left;position: relative;
+
+	& when (@responsive-website = 'true' ) {
+		width: 100%;
+	}
+
+	& when (@responsive-website = 'false' ) {
+		width: 100%; float: left; min-width: @no-responsive-min-width;
+	}
+
+}
+
+.col-2  {width: 50%;}
+.col-3  {width: 33.33%;}
+.col-4  {width: 25%;}
+.col-5  {width: 20%;}
+.col-6  {width: 16.6666666667%;}
+.col-7  {width: 14.2857142857%;}
+.col-8  {width: 12.5%;}
+.col-9  {width: 11.1111111111%;}
+.col-10 {width: 10%;}
+.col-11 {width: 9.09090909091%;}
+.col-12 {width: 8.33%;}
+
+.col-75 {width:75%;}
+
+.col-center{
+	& when (@responsive-website = 'true' ) {
+		width: @col-center; position: relative; margin: 0 auto;
+	}
+
+	& when (@responsive-website = 'false' ) {
+		width: @col-center; position: relative; margin: 0 auto; 
+	}
+}
+
+.col-1000 { 
+
+	& when (@responsive-website = 'true' ) {
+		width: 100%; max-width: 1000px; position: relative; margin: 0 auto;
+	}
+
+	& when (@responsive-website = 'false' ) {
+		width: 1000px; position: relative; margin: 0 auto;
+	}
+
+}
+
+
+html.lt-ie8,html.lt-ie7  {
+
+	.col-center  {
+	 	width:97% !important; max-width: 1000px; position: relative; margin: 0 auto; float: none;
+	}
+}
+
+
+
+@media (max-width: 1000px) {
+body when (@responsive-website = 'true' ) {
+	 
+	.col-center  {
+	 	width:92% !important; max-width: @col-center; position: relative; margin: 0 auto; float: none;
+	}
+
+}
+}
+
+
+
+
+
+/*base tablet to small desktop styles*/
+@media (min-width: 800px) {
+body when (@responsive-website = 'true' ) {
+	  .col-2, .col-7 {width: 100%;}
+	  .col-4, .col-8, .col-10, .col-12 {width: 50%;}
+}
+}
+
+/*base tablet styles*/
+@media (max-width: 800px) {
+body when (@responsive-website = 'true' ) {
+	  .col-4, .col-6, .col-8, .col-10, .col-12 {width: 50%;}
+	  .col-1, .col-2, .col-3, .col-5, .col-7, .col-9, .col-11 {width: 100%;}
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 550px) {
+body when (@responsive-website = 'true' ) {
+  		
+    .col-center  {
+        width:87% !important;
+    }   
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {width: 100%;}
+
+}
+}
