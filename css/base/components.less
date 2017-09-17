@@ -1,0 +1,52 @@
+/*
+1. typography
+-----------------------------------------------------------------------*/
+
+a { font-family: 'Georgia', sans-serif; font-weight: normal; }
+
+h1, h2, h3 {
+	//line-height: 40px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-family: inherit;
+	//line-height: 20px;
+	color: inherit;
+	text-rendering: optimizelegibility;
+	font-weight: 700;
+	font-family: 'Georgia', sans-serif;
+}
+
+h1 {font-size: 38.5px;}
+h2 {font-size: 31.5px;}
+h3 {font-size: 24.5px;}
+h4 {font-size: 17.5px;}
+h5 {font-size: 14px;}
+h6 {font-size: 11.9px;}
+
+p { font-size: 13px; color: #999999; font-family: 'Georgia', sans-serif; font-weight: 300; line-height:20px; 
+	b {}
+}
+
+
+blockquote { padding: 0 0 0 15px; margin: 0 0 20px; border-left: 5px solid rgb(238, 238, 238);
+	p { margin-bottom: 0;font-size: 17.5px;font-weight: 300;line-height: 1.25;}
+	small { display: block;line-height: 20px; color: rgb(153, 153, 153);
+		&:before{content: '\2014 \00A0';}
+	}
+	&.pull-right { float: right;padding-right: 15px;padding-left: 0;border-right: 5px solid rgb(238, 238, 238);border-left: 0; }
+}
+
+/*
+2. classes
+-----------------------------------------------------------------------*/
+
+.pull-right { float: right;}
+.pull-left { float: left;}
+
+.display-none { display: none;}
+.display-block { display: block;}
+
+.text-left 	 {text-align: left;}
+.text-center {text-align: center;}
+.text-right  {text-align: right;}

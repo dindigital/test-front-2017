@@ -1,0 +1,277 @@
+.master-container { float: left;position: relative; width: 100%; overflow: hidden; }
+
+a.btn { .transition(0.200s, linear);
+    &:hover { .opacity(0.6); }
+}
+
+/* CONTENT
+-----------------------------------------------------------------------*/
+.main-content { z-index: 10;  background: @body-bg; 
+	h1,h2,h3, strong { 
+        &.h{ text-transform: uppercase; letter-spacing: 0.8px; font-size: 16px; color: #222222; font-weight: 700;}
+    }
+     
+    .more-link { width: 149px; height: 64px; background-image: url(../images/saiba-mais.jpg); float: left; position: relative}
+}
+
+.carousel-home {
+    .col-center { border-bottom: 1px #e2e2e2 solid; }
+}
+
+.main-slider{ float: left;position: relative; width: 100%; height: 419px;  z-index: 10; background-color: #fff;   
+    .item{ float: left;position: relative; width: 100%;  .transition(0.500s); background-position: top center; background-color: #fff;  border-bottom: 1px #e2e2e2 solid; background-repeat: repeat; height: 418px; overflow: hidden; 
+
+        .img { float: left; position: relative; width: 42%; text-align: center; top: 50px; .opacity(0); .transition(0.200s,linear);
+            img {  position: relative; margin: 0 auto; display: inline-block; width: auto; max-width: 100%; }
+        }
+
+        .banner-content { margin-top: -94px; .opacity(0); float: right;position: relative; width: 51.5%; text-align: left;top: 50%;  z-index: 9999; .transition(0.500s,linear);
+                .title {   position: relative; margin-bottom: 13px; float: left; width: 100%;
+                    h1,h2,h3,h4 { font-size: 42px; line-height: 42px; font-weight: 400;  font-family: 'Georgia'; color: #4a4a4a }
+                    b,strong { font-weight: 700;}
+				}
+              
+				p,ul li { font-size: 16px;  color: #999999; font-weight: 400; line-height: 23px;  float: left;position: relative; width: 100%; margin-bottom: 30px;
+					b { font-weight: 600;}
+				}
+
+                a.btn { float: left; position: relative; text-decoration:  none; color: #fff; .rounded(8px); background-color: #3bafbe; font-size: 16px; font-weight: 400; width: 128px; text-align: center; padding: 6px 0; }
+
+
+        }
+
+         &.left { 
+            .banner-content{ float: left; margin-top: -125px;}
+            .img { float: right; }
+        }
+    
+	}
+    
+    .owl-pagination { position: absolute; width: 100%; bottom: 60px; left: 0; z-index: 500; height: 10px; text-align: right; padding: 0; background-color: transparent;
+        .owl-page { top: 0;
+            span { width: 16px; height: 16px; background-color: #3bafbe; border: 3px #3bafbe solid; .rounded(30px); cursor: pointer;  margin-right: 4px; position: relative; display: inline-block; float: none;}
+            &.active { 
+                span { padding: 0; background-color: #fff}
+            }
+        }
+    }
+    
+    .owl-item.active {
+        .item { left: 0; }
+        .banner-content { .opacity(1.0); }
+        .img {  .opacity(1.0); .transition(0.700s,linear); }
+    }
+}
+
+
+.three-cols {
+    .col-center { overflow: hidden; }
+    .itens { float: left; position: relative; width: 103%; }
+    .item { float: left; position: relative; width: 31%; margin-right: 2.3%; }
+}
+
+
+
+.post-grid { 
+    .col-center { border-bottom: 1px #e2e2e2 solid; padding: 50px 0 50px 0; }
+    .item { 
+        .img { float: left; position: relative; width: 100%; margin-bottom: 23px;
+            img { position: relative; width: auto; max-width: 100%; }
+        }
+        h1,h2,h3,h4 { float: left; position: relative; width: 100%; font-size: 16px; line-height: 16px; font-family: 'Georgia'; font-weight: 400; color: #4a4a4a; margin-bottom: 18px;}
+        p { float: left; width: 100%; letter-spacing: 0.4px; font-weight: 400; font-size: 13px; line-height: 21px; font-family: 'Georgia'; color: #999999; position: relative; margin-bottom: 18px;}
+        a.btn { float: left; position: relative; text-decoration:  none; color: #fff; .rounded(8px); background-color: #3bafbe; font-size: 13px; font-weight: 400; width: 105px; text-align: center; padding: 6px 0; }
+    }
+}
+
+
+.home-a {
+    .col-center {  padding: 40px 0 50px 0; }
+    .title { float: left; position: relative; width: 100%; text-align: center; margin-bottom: 40px;
+        h1,h2,h3,h4 { float: left; position: relative; padding: 0 10% 0 10%; width: 100%; font-size: 22px; line-height: 30px; font-family: 'Georgia'; color: #666666; font-style: italic; font-weight: 400; }
+    }
+
+    .post { float: left;position: relative; width: 100%; margin-bottom: 40px;
+        .img { float: left; text-align: center; text-align: center; position: relative; padding: 4px; border: 1px #d8d8d8 solid; width: 30%;
+            img { float: left; display: inline-block; position: relative; width: auto; max-width: 100%; }
+        }
+        .content { float: right; position: relative; width: 65%;
+            h1, h2, h3, h4 { font-size: 13px; font-weight: 400; color: #3bafbe; float: left; position: relative; width: 100%; margin-bottom: 5px; }
+            p { }
+        }
+    }
+}
+
+
+/* Internal content
+-----------------------------------------------------------------------*/
+
+@media (max-width: 1000px) {
+body when (@responsive-website = 'true'){
+
+
+
+    
+}	
+}
+
+
+@media (max-width: 950px) {
+body when (@responsive-website = 'true' ) {
+    
+
+}
+}
+
+
+/*base tablet styles*/
+@media (max-width: 900px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+
+
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 850px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+    .main-slider{ height: 419px;  
+        .item{ height: 418px; 
+
+            .img { display: none; }
+
+            .banner-content { width: 100%; max-width: 500px; float: left;
+                    .title {   
+                        h1,h2,h3,h4 { font-size: 42px; line-height: 42px;  }
+                    }
+
+                    p,ul li { font-size: 16px;  }
+            }
+
+             &.left { 
+                .banner-content{ width: 100%; float: left;}
+            }
+        
+        }
+        
+        .owl-pagination { text-align: center; }
+        
+    }
+
+
+
+
+}
+}
+
+@media (max-width: 800px) {
+body when (@responsive-website = 'true'){
+
+
+
+
+        
+}	
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 700px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 650px) {
+body when (@responsive-website = 'true' ) {
+
+
+    
+    .three-cols {
+        .col-center { overflow: hidden; }
+        .itens { width: 100%; }
+        .item { width: 100%; margin-bottom: 50px; margin-right: 0%;
+            &:last-child { margin-bottom: 0px; }
+        }
+    }  
+
+
+    .home-a {
+        .item { margin-bottom: 0px;}
+        .post {
+            .img { float: left; width: 100%; border:0;
+                img { float: none; display: inline-block; }
+            }
+            .content { float: left; position: relative;text-align: center; width: 100%; padding: 0 20% }
+        }
+    }
+
+
+    .post-grid { 
+        .item { text-align: center;
+           
+            h1,h2,h3,h4 { }
+            p { }
+            a.btn { float: none; display: inline-block; }
+        }
+    }
+
+
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 550px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+    .main-slider{ height: 350px;  
+        .item{ height: 350px; 
+
+            .img { display: none; }
+
+            .banner-content { width: 100%; max-width: 500px; float: left; margin-top: -120px; text-align: center;
+                    .title {   
+                        h1,h2,h3,h4 { font-size: 24px; line-height: 24px;  }
+                    }
+
+                    p,ul li { font-size: 14px;  }
+                    a.btn { float: none; display: inline-block; }
+            }
+
+             &.left { 
+                .banner-content{ width: 100%; float: left; margin-top: -120px;}
+            }
+        
+        }
+        
+        .owl-pagination { text-align: center; }
+        
+    }
+
+
+    
+
+
+    
+}
+}
+
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 480px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+}
+}

@@ -1,0 +1,94 @@
+/* Footer
+-----------------------------------------------------------------------*/
+
+
+.footer { background-color: #252525; height: 260px; padding: 40px 0;
+
+    h1, h2, h3, h4, .title, strong { margin-bottom: 20px; float: left;position: relative; width: 100%; font-family: 'Georgia'; font-size: 20px; color: #ffffff; font-weight: 500; }
+    h5 { float: left; position: relative; width: 100%; color: #999999; }
+    .subtitle { font-size: 13px; color: #999999; margin-bottom: 5px;} 
+    .col { float: left; position: relative; width: 25%; padding-right: 2%; } 
+    ul { float: left; position: relative; width: 100%;
+        li { float: left; list-style-type: none; position: relative; width: 100%; margin-bottom: 5px;
+            a { text-decoration: none; color: #3bafbe; .transition(0.200s,linear); padding-bottom: 4px; font-size: 12px; float: left; position: relative; width: 100%; border-bottom: 1px #2c2c2c solid;
+                &:hover { .opacity(0.7); padding-left: 10px; }
+            }
+        }
+    }
+    p { font-weight: 400; font-size: 12px; line-height: 20px; color: #999999; letter-spacing: 0.5px;
+        a { color: #3bafbe; text-decoration: none; }
+    }
+    a.btn{ float: right; position: relative; font-size: 12px; text-decoration: underline; color: #3bafbe; margin-top: 10px; }
+
+
+    .news-form { float: left; position: relative; float: left; position: relative;
+        input[type="text"], input[type="email"] { float: left; margin-bottom: 10px; position: relative; width: 100%; font-family: 'Georgia'; font-size: 12px; letter-spacing: 0.5px; outline: 0; border:0; color: #fff; padding: 6px 10px; .rounded(5px); background-color: #2c2c2c; }
+        input[type="submit"]  { border: none; float: left; position: relative; text-decoration:  none; color: #fff; .rounded(8px); background-color: #3bafbe; font-family: "Georgia"; font-size: 13px; font-weight: 400; width: 85px; text-align: center; padding: 6px 0; .transition(0.200s,linear);
+            &:hover { .opacity(0.6); }
+        }
+    }
+}
+
+.copyright { height: 60px; background-color: #1a1a1a; background-position: center;
+	p { font-size: 12px; color: #999999; font-weight: 300; position: relative; float: left;  line-height: 60px; font-family: 'Georgia';
+        b, strong { font-weight: 400 !important;}
+        &.right { float: right; position: relative; }
+    }
+}
+
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 1000px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+    .footer { background-color: #252525; height: auto; padding: 40px 0; text-align: center;
+        .col { float: left; position: relative; width: 100%; padding-right: 0%; margin-bottom: 40px; } 
+        a.btn{ float: none; display: inline-block; }
+
+        .news-form {
+            input[type="submit"]  {  float: none; display: inline-block; }
+        }
+    }
+
+
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 750px) {
+body when (@responsive-website = 'true' ) {
+
+
+    .copyright { height: auto; text-align: center; padding: 30px 0;
+        p { font-size: 12px; color: #999999; font-weight: 300; position: relative; float: left; width: 100%; line-height: 15px; font-family: 'Georgia';
+            b, strong { font-weight: 400 !important;}
+            &.right { float: left; position: relative; }
+            &:first-child { margin-bottom: 20px; }
+        }
+    }
+
+
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 900px) {
+body when (@responsive-website = 'true' ) {
+
+
+
+
+
+
+}
+}
+
+/*base mobile styles - everything 100%*/
+@media (max-width: 550px) {
+body when (@responsive-website = 'true' ) {
+
+
+}
+}
