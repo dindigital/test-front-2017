@@ -88,12 +88,35 @@ header {
   font-size: 2.5rem;
   letter-spacing: 3px; }
 
-.section1 .card img {
-  max-height: 160px; }
-
 .section1 .card h4 {
   color: #181818;
   text-transform: uppercase; }
 
 .citacao {
-  color: #181818; }
+  color: #181818;
+  font-size: 1.4rem; }
+
+.box-grid h4 {
+  color: #3995a1; }
+
+.section3 {
+  background: #252525; }
+  .section3 .titulo-secao3 {
+    color: #fff; }
+
+.verdeClaro {
+  color: #3aaebd; }
+
+.listas-secao3 {
+  list-style: none;
+  padding: 0; }
+
+.form-secao3 input {
+  background: #2c2c2c; }
+
+.form-secao3 .botao-padrao {
+  background: #3aaebd;
+  text-transform: uppercase; }
+
+footer {
+  background: #252525; }
