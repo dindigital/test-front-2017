@@ -1,5 +1,18 @@
 body {
-  font-family: Verdana, Geneva, sans-serif; }
+  /*font-family: Verdana, Geneva, sans-serif;*/
+  font-family: 'Noto Serif', serif;
+  color: #afafaf; }
+
+.borderLight {
+  border-bottom: 1px solid #f2f2f2; }
+
+.botao-padrao {
+  color: white;
+  border-radius: 10px;
+  background: #3bafbe; }
+
+header {
+  border-top: 5px solid #3995a1; }
 
 .social-lista {
   list-style: none; }
@@ -29,7 +42,8 @@ body {
   vertical-align: middle;
   background: #3bafbe;
   border-radius: 5px;
-  color: #fff; }
+  color: #fff;
+  text-transform: uppercase; }
 
 .busca ::-webkit-input-placeholder {
   color: #fff;
@@ -70,8 +84,16 @@ body {
 
 .box-informacao__titulo {
   text-transform: uppercase;
-  font-family: sans-serif; }
+  color: #181818;
+  font-size: 2.5rem;
+  letter-spacing: 3px; }
 
-.box-informacao__button {
-  color: white;
-  background: #3bafbe; }
+.section1 .card img {
+  max-height: 160px; }
+
+.section1 .card h4 {
+  color: #181818;
+  text-transform: uppercase; }
+
+.citacao {
+  color: #181818; }

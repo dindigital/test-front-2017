@@ -11,7 +11,7 @@
 	"devDependencies": {},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"sass": "node-sass -w ./scss/main.scss -o ./css/main.css"
+		"sass": "node-sass -w scss/main.scss -r css/main.css"
 	},
 	"repository": {
 		"type": "git",

@@ -1,3 +1,7 @@
+header {
+	border-top: 5px solid #3995a1;
+}
+
 .social-lista {
 	list-style: none;
 
@@ -37,6 +41,7 @@
 		background: #3bafbe;
 		border-radius: 5px;
 		color: #fff;
+		text-transform: uppercase;
 	}
 
 	::-webkit-input-placeholder {
