@@ -1,0 +1,36 @@
+.carousel-inner {
+	.img-fluid {
+		max-width: 100%;
+		max-height: 300px;
+	}
+}
+
+.carousel-indicators {
+	width: 83%;
+	justify-content: flex-end;
+
+	.active {
+		background: #3bafbe;
+	}
+}
+
+.carousel-indicators>li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px #3bafbe solid;
+}
+
+
+
+.box-informacao {
+	&__titulo {
+		text-transform: uppercase;
+		font-family: sans-serif;
+	}
+
+	&__button {
+		color: white;
+		background: #3bafbe;
+	}
+}
