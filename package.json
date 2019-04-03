@@ -1,0 +1,26 @@
+{
+	"name": "test-front-2017",
+	"version": "1.0.0",
+	"description": "### DIN DIGITAL - 2017 ## Contratação CLT",
+	"main": "index.js",
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"jquery": "^3.3.1",
+		"node-sass": "^4.11.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "node-sass -w scss/main.scss -r css/main.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fernode/test-front-2017.git"
+	},
+	"author": "Fernando Silva",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/fernode/test-front-2017/issues"
+	},
+	"homepage": "https://github.com/fernode/test-front-2017#readme"
+}

@@ -1,0 +1,68 @@
+header {
+	border-top: 5px solid #3995a1;
+}
+
+.social-lista {
+	list-style: none;
+
+
+	&__item {
+		width: 30px;
+		height: 30px;
+		background-color: #1f1f1f;
+		border-radius: 50%;
+		text-align: center;
+		cursor: pointer;
+		transition: .3s ease-out;
+
+		& a {
+			vertical-align: middle;
+			color: #fff;
+		}
+
+		&:hover {
+			background-color: #ee802f;
+		}
+	}
+}
+
+.busca {
+	input {
+		background: #1f1f1f;
+		height: 30px;
+		border-radius: 5px;
+	}
+
+	button {
+		height: 30px;
+		padding: 1px 5px;
+		text-align: center;
+		vertical-align: middle;
+		background: #3bafbe;
+		border-radius: 5px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	::-webkit-input-placeholder {
+		color: #fff;
+		vertical-align: middle;
+	}
+
+	:-moz-placeholder {
+		/* Firefox 18- */
+		color: #fff;
+		vertical-align: middle;
+	}
+
+	::-moz-placeholder {
+		/* Firefox 19+ */
+		color: #fff;
+		vertical-align: middle;
+	}
+
+	:-ms-input-placeholder {
+		color: #fff;
+		vertical-align: middle;
+	}
+}

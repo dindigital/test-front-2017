@@ -1,0 +1,122 @@
+body {
+  /*font-family: Verdana, Geneva, sans-serif;*/
+  font-family: 'Noto Serif', serif;
+  color: #afafaf; }
+
+.borderLight {
+  border-bottom: 1px solid #f2f2f2; }
+
+.botao-padrao {
+  color: white;
+  border-radius: 10px;
+  background: #3bafbe; }
+
+header {
+  border-top: 5px solid #3995a1; }
+
+.social-lista {
+  list-style: none; }
+  .social-lista__item {
+    width: 30px;
+    height: 30px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease-out; }
+    .social-lista__item a {
+      vertical-align: middle;
+      color: #fff; }
+    .social-lista__item:hover {
+      background-color: #ee802f; }
+
+.busca input {
+  background: #1f1f1f;
+  height: 30px;
+  border-radius: 5px; }
+
+.busca button {
+  height: 30px;
+  padding: 1px 5px;
+  text-align: center;
+  vertical-align: middle;
+  background: #3bafbe;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.busca ::-webkit-input-placeholder {
+  color: #fff;
+  vertical-align: middle; }
+
+.busca :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+  vertical-align: middle; }
+
+.busca ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+  vertical-align: middle; }
+
+.busca :-ms-input-placeholder {
+  color: #fff;
+  vertical-align: middle; }
+
+.nav-link {
+  text-transform: uppercase; }
+
+.carousel-inner .img-fluid {
+  max-width: 100%;
+  max-height: 300px; }
+
+.carousel-indicators {
+  width: 83%;
+  justify-content: flex-end; }
+  .carousel-indicators .active {
+    background: #3bafbe; }
+
+.carousel-indicators > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px #3bafbe solid; }
+
+.box-informacao__titulo {
+  text-transform: uppercase;
+  color: #181818;
+  font-size: 2.5rem;
+  letter-spacing: 3px; }
+
+.section1 .card h4 {
+  color: #181818;
+  text-transform: uppercase; }
+
+.citacao {
+  color: #181818;
+  font-size: 1.4rem; }
+
+.box-grid h4 {
+  color: #3995a1; }
+
+.section3 {
+  background: #252525; }
+  .section3 .titulo-secao3 {
+    color: #fff; }
+
+.verdeClaro {
+  color: #3aaebd; }
+
+.listas-secao3 {
+  list-style: none;
+  padding: 0; }
+
+.form-secao3 input {
+  background: #2c2c2c; }
+
+.form-secao3 .botao-padrao {
+  background: #3aaebd;
+  text-transform: uppercase; }
+
+footer {
+  background: #252525; }
